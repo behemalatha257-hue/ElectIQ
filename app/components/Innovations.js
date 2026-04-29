@@ -109,11 +109,16 @@ export default function Innovations() {
               className={`${styles.card} ${expanded === item.id ? styles.cardExpanded : ''}`}
               style={{ '--card-color': item.color }}
               onClick={() => setExpanded(expanded === item.id ? null : item.id)}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setExpanded(expanded === item.id ? null : item.id); } }}
+              role="button"
+              tabIndex="0"
+              aria-expanded={expanded === item.id}
+              aria-label={`Innovation: ${item.title}. ${expanded === item.id ? 'Showing details.' : 'Click to learn more.'}`}
             >
               {/* Card top */}
               <div className={styles.cardTop}>
                 <div className={styles.iconWrap} style={{ background: `${item.color}22`, border: `1px solid ${item.color}44` }}>
-                  <span className={styles.icon}>{item.icon}</span>
+                  <span className={styles.icon} aria-hidden="true">{item.icon}</span>
                 </div>
                 <div className={styles.cardMeta}>
                   <span className={styles.tag} style={{ color: item.color, background: `${item.color}11`, borderColor: `${item.color}33` }}>
@@ -123,7 +128,7 @@ export default function Innovations() {
                     ● {item.status}
                   </span>
                 </div>
-                <div className={styles.expandIcon}>{expanded === item.id ? '▲' : '▼'}</div>
+                <div className={styles.expandIcon} aria-hidden="true">{expanded === item.id ? '▲' : '▼'}</div>
               </div>
 
               <h3 className={styles.cardTitle}>{item.title}</h3>
@@ -141,12 +146,12 @@ export default function Innovations() {
 
               {/* Expanded details */}
               {expanded === item.id && (
-                <div className={styles.expandedBody} onClick={e => e.stopPropagation()}>
+                <div className={styles.expandedBody} onClick={e => e.stopPropagation()} role="region" aria-label={`Details about ${item.title}`}>
                   <div className={styles.divider}></div>
                   <p className={styles.details}>{item.details}</p>
-                  <div className={styles.benefitsGrid}>
+                  <div className={styles.benefitsGrid} role="list" aria-label="Key Benefits">
                     {item.benefits.map((b, i) => (
-                      <div key={i} className={styles.benefitItem}>{b}</div>
+                      <div key={i} className={styles.benefitItem} role="listitem">{b}</div>
                     ))}
                   </div>
                 </div>

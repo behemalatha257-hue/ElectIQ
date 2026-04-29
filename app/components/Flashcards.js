@@ -77,27 +77,35 @@ export default function Flashcards() {
 
         {/* Controls */}
         <div className={styles.controls}>
-          <div className={styles.categoryPills}>
+          <nav className={styles.categoryPills} aria-label="Flashcard Categories">
             {categories.map(cat => (
               <button
                 key={cat}
                 className={`${styles.catPill} ${category === cat ? styles.catActive : ''}`}
                 onClick={() => { setCategory(cat); setCurrentIdx(0); resetQuiz(); }}
+                aria-pressed={category === cat}
+                aria-label={`Show ${cat} cards`}
               >
                 {cat}
               </button>
             ))}
-          </div>
-          <div className={styles.modeSwitcher}>
+          </nav>
+          <div className={styles.modeSwitcher} role="tablist" aria-label="Study Mode">
             <button
               className={`${styles.modeBtn} ${mode === 'grid' ? styles.modeActive : ''}`}
               onClick={() => setMode('grid')}
+              role="tab"
+              aria-selected={mode === 'grid'}
+              aria-label="Grid View"
             >
               ⊞ Grid
             </button>
             <button
               className={`${styles.modeBtn} ${mode === 'quiz' ? styles.modeActive : ''}`}
               onClick={() => { setMode('quiz'); resetQuiz(); }}
+              role="tab"
+              aria-selected={mode === 'quiz'}
+              aria-label="Quiz Mode"
             >
               🎯 Quiz Mode
             </button>
@@ -105,11 +113,11 @@ export default function Flashcards() {
         </div>
 
         {/* Stats bar */}
-        <div className={styles.statsBar}>
+        <div className={styles.statsBar} aria-live="polite" aria-label="Learning Progress">
           <span className={styles.stat}><span className={styles.statNum}>{filtered.length}</span> Cards</span>
           <span className={styles.stat}><span className={styles.statNum} style={{color:'#10b981'}}>{known.size}</span> Known ✓</span>
           <span className={styles.stat}><span className={styles.statNum} style={{color:'#ef4444'}}>{unknown.size}</span> Review ✗</span>
-          <div className={styles.progressTrack}>
+          <div className={styles.progressTrack} role="progressbar" aria-valuenow={Math.round(progress)} aria-valuemin="0" aria-valuemax="100">
             <div className={styles.progressFill} style={{ width: `${progress}%` }}></div>
           </div>
           <span className={styles.stat}><span className={styles.statNum}>{Math.round(progress)}%</span></span>
@@ -130,6 +138,11 @@ export default function Flashcards() {
                 key={card.id}
                 className={`${styles.cardWrapper} ${flipped[card.id] ? styles.isFlipped : ''}`}
                 onClick={() => toggleFlip(card.id)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFlip(card.id); } }}
+                role="button"
+                tabIndex="0"
+                aria-label={`Flashcard about ${card.front}. ${flipped[card.id] ? 'Showing answer.' : 'Click to flip.'}`}
+                aria-expanded={flipped[card.id] || false}
               >
                 <div className={styles.cardInner}>
                   {/* Front */}
@@ -137,10 +150,10 @@ export default function Flashcards() {
                     <div className={styles.cardDifficulty} style={{ color: diffColors[card.difficulty], borderColor: `${diffColors[card.difficulty]}44`, background: `${diffColors[card.difficulty]}11` }}>
                       {card.difficulty}
                     </div>
-                    <div className={styles.cardEmoji}>{card.emoji}</div>
+                    <div className={styles.cardEmoji} aria-hidden="true">{card.emoji}</div>
                     <p className={styles.cardQuestion}>{card.front}</p>
                     <div className={styles.cardCat}>{card.category}</div>
-                    <div className={styles.cardHint}>Click to reveal answer</div>
+                    <div className={styles.cardHint} aria-hidden="true">Click to reveal answer</div>
                   </div>
                   {/* Back */}
                   <div className={styles.cardBack}>

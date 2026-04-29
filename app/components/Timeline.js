@@ -88,25 +88,29 @@ export default function Timeline() {
         </div>
 
         {/* Phase pills navigation */}
-        <div className={styles.phasePills}>
+        <nav className={styles.phasePills} aria-label="Election Phases">
           {phases.map(p => (
             <button
               key={p.id}
               className={`${styles.pill} ${activePhase === p.id ? styles.pillActive : ''}`}
               style={activePhase === p.id ? { borderColor: p.color, color: p.color } : {}}
               onClick={() => setActivePhase(activePhase === p.id ? null : p.id)}
+              aria-pressed={activePhase === p.id}
+              aria-label={`Show ${p.title}`}
             >
-              <span>{p.icon}</span>
+              <span aria-hidden="true">{p.icon}</span>
               <span>{p.phase}</span>
             </button>
           ))}
           <button
             className={`${styles.pill} ${activePhase === null ? styles.pillActive : ''}`}
             onClick={() => setActivePhase(null)}
+            aria-pressed={activePhase === null}
+            aria-label="Show all phases"
           >
             All Phases
           </button>
-        </div>
+        </nav>
 
         {/* Timeline */}
         <div className={styles.timeline}>
@@ -143,6 +147,11 @@ export default function Timeline() {
                       key={si}
                       className={`${styles.stepCard} ${activeStep === `${phase.id}-${si}` ? styles.stepActive : ''}`}
                       onClick={() => setActiveStep(activeStep === `${phase.id}-${si}` ? null : `${phase.id}-${si}`)}
+                      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActiveStep(activeStep === `${phase.id}-${si}` ? null : `${phase.id}-${si}`); } }}
+                      role="button"
+                      tabIndex="0"
+                      aria-expanded={activeStep === `${phase.id}-${si}`}
+                      aria-label={`${step.title}. Click to ${activeStep === `${phase.id}-${si}` ? 'hide' : 'show'} details.`}
                     >
                       <div className={styles.stepHeader}>
                         <div className={styles.stepNumber} style={{ background: `${phase.color}22`, color: phase.color }}>
@@ -169,8 +178,8 @@ export default function Timeline() {
 
         {/* Progress indicator */}
         <div className={styles.progressBar}>
-          <div className={styles.progressLabel}>Election Readiness</div>
-          <div className={styles.progressTrack}>
+          <div className={styles.progressLabel} id="readiness-label">Election Readiness</div>
+          <div className={styles.progressTrack} role="progressbar" aria-labelledby="readiness-label" aria-valuenow={activePhase ? (activePhase / 5) * 100 : 100} aria-valuemin="0" aria-valuemax="100">
             <div
               className={styles.progressFill}
               style={{ width: activePhase ? `${(activePhase / 5) * 100}%` : '100%' }}

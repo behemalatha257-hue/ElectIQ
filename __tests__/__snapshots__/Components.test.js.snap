@@ -1,0 +1,1837 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Interactive Components Tests Snapshots match (Regression Testing) 1`] = `
+<DocumentFragment>
+  <section
+    class="section"
+    id="flashcards"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="header"
+      >
+        <span
+          class="sectionTag"
+        >
+          🃏 Interactive Learning
+        </span>
+        <h2
+          class="sectionTitle"
+        >
+          Election 
+          <span
+            class="accent"
+          >
+            Flashcards
+          </span>
+        </h2>
+        <p
+          class="sectionSubtitle"
+        >
+          Master key election concepts through interactive study cards. Flip to reveal, track your progress.
+        </p>
+      </div>
+      <div
+        class="controls"
+      >
+        <nav
+          aria-label="Flashcard Categories"
+          class="categoryPills"
+        >
+          <button
+            aria-label="Show All cards"
+            aria-pressed="true"
+            class="catPill catActive"
+          >
+            All
+          </button>
+          <button
+            aria-label="Show Basics cards"
+            aria-pressed="false"
+            class="catPill "
+          >
+            Basics
+          </button>
+          <button
+            aria-label="Show Process cards"
+            aria-pressed="false"
+            class="catPill "
+          >
+            Process
+          </button>
+          <button
+            aria-label="Show History cards"
+            aria-pressed="false"
+            class="catPill "
+          >
+            History
+          </button>
+          <button
+            aria-label="Show Rights cards"
+            aria-pressed="false"
+            class="catPill "
+          >
+            Rights
+          </button>
+          <button
+            aria-label="Show Tech cards"
+            aria-pressed="false"
+            class="catPill "
+          >
+            Tech
+          </button>
+        </nav>
+        <div
+          aria-label="Study Mode"
+          class="modeSwitcher"
+          role="tablist"
+        >
+          <button
+            aria-label="Grid View"
+            aria-selected="true"
+            class="modeBtn modeActive"
+            role="tab"
+          >
+            ⊞ Grid
+          </button>
+          <button
+            aria-label="Quiz Mode"
+            aria-selected="false"
+            class="modeBtn "
+            role="tab"
+          >
+            🎯 Quiz Mode
+          </button>
+        </div>
+      </div>
+      <div
+        aria-label="Learning Progress"
+        aria-live="polite"
+        class="statsBar"
+      >
+        <span
+          class="stat"
+        >
+          <span
+            class="statNum"
+          >
+            12
+          </span>
+           Cards
+        </span>
+        <span
+          class="stat"
+        >
+          <span
+            class="statNum"
+            style="color: rgb(16, 185, 129);"
+          >
+            0
+          </span>
+           Known ✓
+        </span>
+        <span
+          class="stat"
+        >
+          <span
+            class="statNum"
+            style="color: rgb(239, 68, 68);"
+          >
+            0
+          </span>
+           Review ✗
+        </span>
+        <div
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="progressTrack"
+          role="progressbar"
+        >
+          <div
+            class="progressFill"
+            style="width: 0%;"
+          />
+        </div>
+        <span
+          class="stat"
+        >
+          <span
+            class="statNum"
+          >
+            0%
+          </span>
+        </span>
+      </div>
+      <div
+        class="grid"
+      >
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is a Democracy?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(16, 185, 129); border-color: rgba(16, 185, 129, 0.267); background: rgba(16, 185, 129, 0.067);"
+              >
+                Easy
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                🏛️
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is a Democracy?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Basics
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                🏛️
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                A system of government where citizens exercise power by voting for their representatives. It derives authority from the consent of the governed.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is the Electoral College (USA)?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(245, 158, 11); border-color: rgba(245, 158, 11, 0.267); background: rgba(245, 158, 11, 0.067);"
+              >
+                Medium
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                🗺️
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is the Electoral College (USA)?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Basics
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                🗺️
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                A body of 538 electors who formally elect the President. A candidate needs 270+ electoral votes to win.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is Gerrymandering?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(239, 68, 68); border-color: rgba(239, 68, 68, 0.267); background: rgba(239, 68, 68, 0.067);"
+              >
+                Hard
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                🗂️
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is Gerrymandering?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Process
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                🗂️
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                Manipulating electoral district boundaries to favor a particular political party. Named after Governor Elbridge Gerry whose 1812 redistricting created a salamander-shaped district.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is a Primary Election?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(16, 185, 129); border-color: rgba(16, 185, 129, 0.267); background: rgba(16, 185, 129, 0.067);"
+              >
+                Easy
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                🔑
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is a Primary Election?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Process
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                🔑
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                A preliminary election where voters of a party choose their candidate to run in the general election. Can be open, closed, or semi-closed.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is the 19th Amendment?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(245, 158, 11); border-color: rgba(245, 158, 11, 0.267); background: rgba(245, 158, 11, 0.067);"
+              >
+                Medium
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                ⚖️
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is the 19th Amendment?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Rights
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                ⚖️
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                Ratified in 1920, it granted American women the constitutional right to vote — a major victory of the suffrage movement.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is the Voting Rights Act of 1965?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(245, 158, 11); border-color: rgba(245, 158, 11, 0.267); background: rgba(245, 158, 11, 0.067);"
+              >
+                Medium
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                ✊
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is the Voting Rights Act of 1965?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Rights
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                ✊
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                Landmark U.S. legislation that prohibits racial discrimination in voting, eliminating literacy tests and providing federal oversight of elections in discriminatory states.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about When did women first vote in a national election?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(239, 68, 68); border-color: rgba(239, 68, 68, 0.267); background: rgba(239, 68, 68, 0.067);"
+              >
+                Hard
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                📜
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                When did women first vote in a national election?
+              </p>
+              <div
+                class="cardCat"
+              >
+                History
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                📜
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                New Zealand was first (1893), Australia followed (1902). In the US it was 1920. The UK granted full women's suffrage in 1928.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is the oldest democracy?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(245, 158, 11); border-color: rgba(245, 158, 11, 0.267); background: rgba(245, 158, 11, 0.067);"
+              >
+                Medium
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                🏺
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is the oldest democracy?
+              </p>
+              <div
+                class="cardCat"
+              >
+                History
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                🏺
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                Ancient Athens (c. 508 BC) is considered the birthplace of democracy. Modern democracies evolved from Enlightenment ideas in the 17th–18th centuries.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is Ranked Choice Voting (RCV)?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(239, 68, 68); border-color: rgba(239, 68, 68, 0.267); background: rgba(239, 68, 68, 0.067);"
+              >
+                Hard
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                📊
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is Ranked Choice Voting (RCV)?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Process
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                📊
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                Voters rank candidates in order of preference (1st, 2nd, 3rd...). If no candidate gets a majority, the last-place candidate is eliminated and votes are redistributed.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is a Blockchain Voting System?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(239, 68, 68); border-color: rgba(239, 68, 68, 0.267); background: rgba(239, 68, 68, 0.067);"
+              >
+                Hard
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                ⛓️
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is a Blockchain Voting System?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Tech
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                ⛓️
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                An experimental voting method that uses blockchain technology to create transparent, tamper-proof, and auditable vote records while preserving voter anonymity.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is a Voter Information Platform?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(16, 185, 129); border-color: rgba(16, 185, 129, 0.267); background: rgba(16, 185, 129, 0.067);"
+              >
+                Easy
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                💻
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is a Voter Information Platform?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Tech
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                💻
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                Digital tools (websites/apps) that provide personalized voter guides, polling locations, ballot previews, and registration information.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-label="Flashcard about What is a Referendum?. Click to flip."
+          class="cardWrapper "
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="cardInner"
+          >
+            <div
+              class="cardFront"
+            >
+              <div
+                class="cardDifficulty"
+                style="color: rgb(245, 158, 11); border-color: rgba(245, 158, 11, 0.267); background: rgba(245, 158, 11, 0.067);"
+              >
+                Medium
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardEmoji"
+              >
+                🗳️
+              </div>
+              <p
+                class="cardQuestion"
+              >
+                What is a Referendum?
+              </p>
+              <div
+                class="cardCat"
+              >
+                Basics
+              </div>
+              <div
+                aria-hidden="true"
+                class="cardHint"
+              >
+                Click to reveal answer
+              </div>
+            </div>
+            <div
+              class="cardBack"
+            >
+              <div
+                class="cardEmoji"
+              >
+                🗳️
+              </div>
+              <p
+                class="cardAnswer"
+              >
+                A direct vote by the entire electorate on a specific political question or proposed law. Example: Brexit was a referendum on UK leaving the EU.
+              </p>
+              <div
+                class="cardMarkBtns"
+              >
+                <button
+                  class="markKnown"
+                >
+                  ✓ Got it
+                </button>
+                <button
+                  class="markUnknown"
+                >
+                  ✗ Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Interactive Components Tests Snapshots match (Regression Testing) 2`] = `
+<DocumentFragment>
+  <section
+    class="section"
+    id="timeline"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="header"
+      >
+        <span
+          class="sectionTag"
+        >
+          📅 Election Journey
+        </span>
+        <h2
+          class="sectionTitle"
+        >
+          The Complete Election 
+          <span
+            class="accent"
+          >
+            Timeline
+          </span>
+        </h2>
+        <p
+          class="sectionSubtitle"
+        >
+          From voter registration to counting ballots — every step explained simply.
+        </p>
+      </div>
+      <nav
+        aria-label="Election Phases"
+        class="phasePills"
+      >
+        <button
+          aria-label="Show Voter Registration"
+          aria-pressed="false"
+          class="pill "
+        >
+          <span
+            aria-hidden="true"
+          >
+            📋
+          </span>
+          <span>
+            Phase 1
+          </span>
+        </button>
+        <button
+          aria-label="Show Candidate & Issue Research"
+          aria-pressed="false"
+          class="pill "
+        >
+          <span
+            aria-hidden="true"
+          >
+            🔍
+          </span>
+          <span>
+            Phase 2
+          </span>
+        </button>
+        <button
+          aria-label="Show Pre-Election Preparation"
+          aria-pressed="false"
+          class="pill "
+        >
+          <span
+            aria-hidden="true"
+          >
+            📅
+          </span>
+          <span>
+            Phase 3
+          </span>
+        </button>
+        <button
+          aria-label="Show Election Day"
+          aria-pressed="false"
+          class="pill "
+        >
+          <span
+            aria-hidden="true"
+          >
+            🗳️
+          </span>
+          <span>
+            Phase 4
+          </span>
+        </button>
+        <button
+          aria-label="Show Post-Election"
+          aria-pressed="false"
+          class="pill "
+        >
+          <span
+            aria-hidden="true"
+          >
+            📊
+          </span>
+          <span>
+            Phase 5
+          </span>
+        </button>
+        <button
+          aria-label="Show all phases"
+          aria-pressed="true"
+          class="pill pillActive"
+        >
+          All Phases
+        </button>
+      </nav>
+      <div
+        class="timeline"
+      >
+        <div
+          class="phaseRow"
+        >
+          <div
+            class="phaseMarker"
+          >
+            <div
+              class="markerCircle"
+              style="background: rgb(59, 130, 246); box-shadow: 0 0 20px #3b82f666;"
+            >
+              📋
+            </div>
+            <div
+              class="markerLine"
+              style="background: linear-gradient(#3b82f6, #6366f1);"
+            />
+          </div>
+          <div
+            class="phaseContent"
+          >
+            <div
+              class="phaseHeader"
+            >
+              <span
+                class="phaseTag"
+                style="color: rgb(59, 130, 246); border-color: rgba(59, 130, 246, 0.267); background: rgba(59, 130, 246, 0.067);"
+              >
+                Phase 1
+              </span>
+              <h3
+                class="phaseTitle"
+              >
+                Voter Registration
+              </h3>
+              <span
+                class="phasePeriod"
+              >
+                ⏱ 6–12 Months Before Election
+              </span>
+            </div>
+            <div
+              class="steps"
+            >
+              <div
+                aria-expanded="false"
+                aria-label="Check Eligibility. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(59, 130, 246, 0.133); color: rgb(59, 130, 246);"
+                  >
+                    1
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Check Eligibility
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Register Online or In-Person. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(59, 130, 246, 0.133); color: rgb(59, 130, 246);"
+                  >
+                    2
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Register Online or In-Person
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Verify Registration. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(59, 130, 246, 0.133); color: rgb(59, 130, 246);"
+                  >
+                    3
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Verify Registration
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="phaseRow"
+        >
+          <div
+            class="phaseMarker"
+          >
+            <div
+              class="markerCircle"
+              style="background: rgb(99, 102, 241); box-shadow: 0 0 20px #6366f166;"
+            >
+              🔍
+            </div>
+            <div
+              class="markerLine"
+              style="background: linear-gradient(#6366f1, #8b5cf6);"
+            />
+          </div>
+          <div
+            class="phaseContent"
+          >
+            <div
+              class="phaseHeader"
+            >
+              <span
+                class="phaseTag"
+                style="color: rgb(99, 102, 241); border-color: rgba(99, 102, 241, 0.267); background: rgba(99, 102, 241, 0.067);"
+              >
+                Phase 2
+              </span>
+              <h3
+                class="phaseTitle"
+              >
+                Candidate & Issue Research
+              </h3>
+              <span
+                class="phasePeriod"
+              >
+                ⏱ 1–3 Months Before Election
+              </span>
+            </div>
+            <div
+              class="steps"
+            >
+              <div
+                aria-expanded="false"
+                aria-label="Study the Ballot. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(99, 102, 241, 0.133); color: rgb(99, 102, 241);"
+                  >
+                    1
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Study the Ballot
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Research Candidates. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(99, 102, 241, 0.133); color: rgb(99, 102, 241);"
+                  >
+                    2
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Research Candidates
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Understand Key Issues. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(99, 102, 241, 0.133); color: rgb(99, 102, 241);"
+                  >
+                    3
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Understand Key Issues
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="phaseRow"
+        >
+          <div
+            class="phaseMarker"
+          >
+            <div
+              class="markerCircle"
+              style="background: rgb(139, 92, 246); box-shadow: 0 0 20px #8b5cf666;"
+            >
+              📅
+            </div>
+            <div
+              class="markerLine"
+              style="background: linear-gradient(#8b5cf6, #06b6d4);"
+            />
+          </div>
+          <div
+            class="phaseContent"
+          >
+            <div
+              class="phaseHeader"
+            >
+              <span
+                class="phaseTag"
+                style="color: rgb(139, 92, 246); border-color: rgba(139, 92, 246, 0.267); background: rgba(139, 92, 246, 0.067);"
+              >
+                Phase 3
+              </span>
+              <h3
+                class="phaseTitle"
+              >
+                Pre-Election Preparation
+              </h3>
+              <span
+                class="phasePeriod"
+              >
+                ⏱ 1–2 Weeks Before Election
+              </span>
+            </div>
+            <div
+              class="steps"
+            >
+              <div
+                aria-expanded="false"
+                aria-label="Confirm Polling Location. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(139, 92, 246, 0.133); color: rgb(139, 92, 246);"
+                  >
+                    1
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Confirm Polling Location
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Plan Your Vote. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(139, 92, 246, 0.133); color: rgb(139, 92, 246);"
+                  >
+                    2
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Plan Your Vote
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Prepare Required ID. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(139, 92, 246, 0.133); color: rgb(139, 92, 246);"
+                  >
+                    3
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Prepare Required ID
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="phaseRow"
+        >
+          <div
+            class="phaseMarker"
+          >
+            <div
+              class="markerCircle"
+              style="background: rgb(6, 182, 212); box-shadow: 0 0 20px #06b6d466;"
+            >
+              🗳️
+            </div>
+            <div
+              class="markerLine"
+              style="background: linear-gradient(#06b6d4, #10b981);"
+            />
+          </div>
+          <div
+            class="phaseContent"
+          >
+            <div
+              class="phaseHeader"
+            >
+              <span
+                class="phaseTag"
+                style="color: rgb(6, 182, 212); border-color: rgba(6, 182, 212, 0.267); background: rgba(6, 182, 212, 0.067);"
+              >
+                Phase 4
+              </span>
+              <h3
+                class="phaseTitle"
+              >
+                Election Day
+              </h3>
+              <span
+                class="phasePeriod"
+              >
+                ⏱ The Big Day
+              </span>
+            </div>
+            <div
+              class="steps"
+            >
+              <div
+                aria-expanded="false"
+                aria-label="Go to Your Polling Place. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(6, 182, 212, 0.133); color: rgb(6, 182, 212);"
+                  >
+                    1
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Go to Your Polling Place
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Cast Your Ballot. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(6, 182, 212, 0.133); color: rgb(6, 182, 212);"
+                  >
+                    2
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Cast Your Ballot
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Get Your "I Voted" Sticker. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(6, 182, 212, 0.133); color: rgb(6, 182, 212);"
+                  >
+                    3
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Get Your "I Voted" Sticker
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="phaseRow"
+        >
+          <div
+            class="phaseMarker"
+          >
+            <div
+              class="markerCircle"
+              style="background: rgb(16, 185, 129); box-shadow: 0 0 20px #10b98166;"
+            >
+              📊
+            </div>
+          </div>
+          <div
+            class="phaseContent"
+          >
+            <div
+              class="phaseHeader"
+            >
+              <span
+                class="phaseTag"
+                style="color: rgb(16, 185, 129); border-color: rgba(16, 185, 129, 0.267); background: rgba(16, 185, 129, 0.067);"
+              >
+                Phase 5
+              </span>
+              <h3
+                class="phaseTitle"
+              >
+                Post-Election
+              </h3>
+              <span
+                class="phasePeriod"
+              >
+                ⏱ After Election Day
+              </span>
+            </div>
+            <div
+              class="steps"
+            >
+              <div
+                aria-expanded="false"
+                aria-label="Follow Results. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(16, 185, 129, 0.133); color: rgb(16, 185, 129);"
+                  >
+                    1
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Follow Results
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Understand the Count. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(16, 185, 129, 0.133); color: rgb(16, 185, 129);"
+                  >
+                    2
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Understand the Count
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                aria-label="Transition of Power. Click to show details."
+                class="stepCard "
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="stepHeader"
+                >
+                  <div
+                    class="stepNumber"
+                    style="background: rgba(16, 185, 129, 0.133); color: rgb(16, 185, 129);"
+                  >
+                    3
+                  </div>
+                  <span
+                    class="stepTitle"
+                  >
+                    Transition of Power
+                  </span>
+                  <span
+                    class="stepChevron"
+                  >
+                    ▼
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="progressBar"
+      >
+        <div
+          class="progressLabel"
+          id="readiness-label"
+        >
+          Election Readiness
+        </div>
+        <div
+          aria-labelledby="readiness-label"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="100"
+          class="progressTrack"
+          role="progressbar"
+        >
+          <div
+            class="progressFill"
+            style="width: 100%;"
+          />
+        </div>
+        <div
+          class="progressPct"
+        >
+          Complete Journey
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

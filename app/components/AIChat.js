@@ -139,40 +139,46 @@ export default function AIChat() {
             </div>
 
             <div className={styles.sideSection}>
-              <div className={styles.sideSectionTitle}>Quick Topics</div>
-              {quickTopics.map((t, i) => (
-                <button
-                  key={i}
-                  className={styles.quickTopic}
-                  onClick={() => sendMessage(t.q)}
-                >
-                  <span className={styles.topicIcon}>{t.icon}</span>
-                  <span>{t.label}</span>
-                </button>
-              ))}
+              <div className={styles.sideSectionTitle} id="quick-topics-label">Quick Topics</div>
+              <div role="group" aria-labelledby="quick-topics-label">
+                {quickTopics.map((t, i) => (
+                  <button
+                    key={i}
+                    className={styles.quickTopic}
+                    onClick={() => sendMessage(t.q)}
+                    aria-label={`Learn more about ${t.label}`}
+                  >
+                    <span className={styles.topicIcon} aria-hidden="true">{t.icon}</span>
+                    <span>{t.label}</span>
+                  </button>
+                ))}
+              </div>
             </div>
 
             <div className={styles.sideSection}>
-              <div className={styles.sideSectionTitle}>Suggested Questions</div>
-              {suggestedQuestions.slice(0, 4).map((q, i) => (
-                <button
-                  key={i}
-                  className={styles.suggestBtn}
-                  onClick={() => sendMessage(q)}
-                >
-                  {q}
-                </button>
-              ))}
+              <div className={styles.sideSectionTitle} id="suggested-questions-label">Suggested Questions</div>
+              <div role="group" aria-labelledby="suggested-questions-label">
+                {suggestedQuestions.slice(0, 4).map((q, i) => (
+                  <button
+                    key={i}
+                    className={styles.suggestBtn}
+                    onClick={() => sendMessage(q)}
+                    aria-label={`Ask: ${q}`}
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
             </div>
 
-            <div className={styles.disclaimer}>
-              <span>ℹ️</span>
+            <div className={styles.disclaimer} role="note">
+              <span aria-hidden="true">ℹ️</span>
               <span>ElectIQ AI provides educational information. Always verify with official sources.</span>
             </div>
           </aside>
 
           {/* Chat window */}
-          <div className={styles.chatWindow}>
+          <div className={styles.chatWindow} role="log" aria-label="Chat messages" aria-live="polite">
             {/* Messages */}
             <div className={styles.messages}>
               {messages.map((msg, i) => (
@@ -212,13 +218,14 @@ export default function AIChat() {
             </div>
 
             {/* Suggested quick messages */}
-            <div className={styles.quickSuggests}>
+            <div className={styles.quickSuggests} role="group" aria-label="Suggested quick replies">
               {suggestedQuestions.slice(4).map((q, i) => (
                 <button
                   key={i}
                   className={styles.quickSuggestBtn}
                   onClick={() => sendMessage(q)}
                   disabled={loading}
+                  aria-label={`Ask: ${q}`}
                 >
                   {q}
                 </button>
@@ -236,6 +243,7 @@ export default function AIChat() {
                 onKeyDown={handleKeyDown}
                 rows={1}
                 disabled={loading}
+                aria-label="Your message to ElectIQ AI"
               />
               <button
                 className={`${styles.sendBtn} ${loading ? styles.sending : ''}`}
