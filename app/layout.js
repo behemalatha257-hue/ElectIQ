@@ -1,5 +1,6 @@
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +34,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#050d1a" />
       </head>
-      <body>{children}</body>
+      <body>
+        <GoogleAnalytics ga_id="G-D1Y2L3Z4M5" />
+        {children}
+      </body>
     </html>
   );
 }
