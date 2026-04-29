@@ -9,6 +9,36 @@ ElectIQ is a comprehensive, production-grade civic education platform designed t
 
 ---
 
+## 📊 System Architecture & Flow
+
+### 🏗️ Architecture Overview
+```mermaid
+graph TD
+    User([Citizen/Voter]) <--> WebApp[Next.js App Router]
+    WebApp <--> API[API Chat Route]
+    API <--> Gemini[Google Gemini AI]
+    
+    subgraph Google_Cloud_Platform
+        WebApp
+        API
+        CR[Cloud Run Container]
+        AR[Artifact Registry]
+    end
+    
+    CR -.-> AR
+```
+
+### 🗺️ User Journey
+```mermaid
+graph LR
+    Start(Enter Site) --> Timeline(Explore Voter Journey)
+    Timeline --> Learning(Flashcard Mastery)
+    Learning --> Assistant(Ask Gemini AI)
+    Assistant --> Knowledge(Civic Empowerment)
+```
+
+---
+
 ## ✨ Key Features
 
 ### 1. 📅 Interactive Voter Journey
